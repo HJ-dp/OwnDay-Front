@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  <img src="./public/logo.png" alt="OWN DAY" width="200px" height="200px" />
+  <img src="./public/logo.png" alt="OWN DAY" width="300px" height="200px" />
   <br />
   <h1>Own Day</h1>
 </div>
