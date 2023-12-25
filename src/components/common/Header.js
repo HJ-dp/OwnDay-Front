@@ -11,9 +11,7 @@ function Header() {
               Own Day
             </Link>
           </div>
-          <div className="header-menu-box">
-            <Link to="/hrboard">채팅</Link>
-          </div>
+          <div className="header-menu-box"></div>
           <div className="header-login-box">
             <Link to="/login">로그인</Link>
             <Link to="/mypage">마이페이지</Link>
@@ -37,7 +35,7 @@ export default Header;
 
 const HeaderContainer = styled.main`
   .header-container {
-    background-color: red;
+    background-color: #304ffe;
     height: 44px;
     display: flex;
     align-items: center;
@@ -71,6 +69,18 @@ const HeaderContainer = styled.main`
   .header-login-box a:hover,
   .header-menu-box a:hover {
     transform: scale(1.1);
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+  }
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f59000;
   }
 
   @media (max-width: 768px) {
