@@ -10,31 +10,29 @@ export const FlexContainer = styled.div`
   transition: all 0.2s linear;
   width: calc(100%-2rem);
   min-height: calc( 100vh - 299px );
-  background-color: ${({ theme }) => theme.bgColor};
   & h2 {
     font-size: 24px;
     font-weight: 500;
-    color: ${({ theme }) => theme.titleColor};
   };
   & h3 {
+    font-size: 17px;
     font-weight: 400;
   }
   & h4 {
+    font-size: 14px;
     font-weight: 200;
-    color: ${({ theme }) => theme.secondTextColor};
+  }
+  & h5 {
+    font-size: 12px;
+    font-weight: 200;
   }
   & form {
-    color: ${({ theme }) => theme.headerTextColor};
-    background-color: ${({ theme }) => theme.formBgColor};
-    border : ${({ theme }) => theme.borderColor};
   };
   & input {
     padding: 10px;
     border-radius: .5em;
-    background-color: ${({ theme }) => theme.inputBgColor};
   };
   & input[type=submit] {
-    background-color: ${({ theme }) => theme.keyColor};
   }
   & input::placeholder {color:#444;}
   & input::-webkit-input-placeholder {color:#444;}
@@ -55,7 +53,6 @@ export const FlexContainer = styled.div`
     line-height: 1.5;
   
     color: #444;
-    background-color: ${({ theme }) => theme.inputBgColor};
   
     padding: .6em 1.4em .5em .8em;
     margin: 0;
