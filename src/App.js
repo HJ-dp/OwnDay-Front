@@ -1,9 +1,17 @@
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import MainPage from './pages/MainPage';
+import NotFound from './pages/NotFound';
+import AppLayout from './components/common/AppLayout';
 function App() {
   return (
-    <div>
-      OWNDAY 시작
-    </div>
+    <BrowserRouter>
+        <AppLayout>
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </AppLayout>
+    </BrowserRouter>
   );
 }
 
