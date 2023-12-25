@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { FormContainer, FormTitle } from "../../styles/styles";
+import styled from "styled-components";
 
 function LoginForm() {
   const {
@@ -37,11 +38,37 @@ function LoginForm() {
           />
           {errors?.password && <span>{errors.password.message}</span>}
         </div>
-        <Link to="/signup">회원가입</Link>
-        <button type="submit">로그인</button>
+        <div>
+          <Button>
+            <Link to="/signup">회원가입</Link>
+          </Button>
+          <LoginButton type="submit">로그인</LoginButton>
+        </div>
       </form>
     </FormContainer>
   );
 }
 
 export default LoginForm;
+
+const Button = styled.button`
+  border: none;
+  width: 48%;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #d9d9d9;
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+`;
+
+const LoginButton = styled(Button)`
+  background-color: #3d5afe;
+`;

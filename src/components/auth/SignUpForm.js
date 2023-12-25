@@ -83,4 +83,5 @@ const SignUpButton = styled.button`
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 20px;
+  cursor: pointer;
 `;

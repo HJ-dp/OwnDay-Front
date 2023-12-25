@@ -4,7 +4,6 @@ import NotFound from "./pages/NotFound";
 import AppLayout from "./components/common/AppLayout";
 import AuthPage from "./pages/AuthPage";
 
-import SignUpPage from "./pages/SignUpPage";
 import DetailPage from "./pages/DetailPage";
 function App() {
   return (
