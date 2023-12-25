@@ -1,22 +1,25 @@
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
-function Item() {
+function Item(props) {
     return (
         <>
-            <ItemContainer>
-                <Ficture></Ficture>
-                <Title>포터블 모니터</Title>
-                <Schdule>12/19~12/31</Schdule>
-                <Price>30000원/일</Price>
-            </ItemContainer>
+            <Link to='/detail:id' >
+                <ItemContainer>
+                    <Ficture></Ficture>
+                    <Title>포터블 모니터</Title>
+                    <Schdule>12/19~12/31</Schdule>
+                    <Price>30000원/일</Price>
+                </ItemContainer>
+            </Link>
         </>
     );
-  }
-  
-  export default Item;
+}
+
+export default Item;
 
 
-  const ItemContainer = styled.div`
+const ItemContainer = styled.div`
     width:100%;
     height:250px;
     display:flex;
@@ -24,7 +27,7 @@ function Item() {
     gap:3px;
   `
 
-  const Ficture = styled.div`
+const Ficture = styled.div`
     width:100%;
     background-color:#bbb;
     width:200px;
@@ -32,10 +35,10 @@ function Item() {
     border-radius:20px;
   `
 
-  const Title = styled.h3`
+const Title = styled.h3`
 
   `
-  const Schdule = styled.h4`
+const Schdule = styled.h4`
   `
-  const Price = styled.h3`
+const Price = styled.h3`
   `

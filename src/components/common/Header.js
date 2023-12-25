@@ -71,17 +71,7 @@ const HeaderContainer = styled.main`
     transform: scale(1.1);
   }
 
-  a {
-    color: #fff;
-    text-decoration: none;
-    outline: none;
-  }
-  a:hover,
-  a:active {
-    text-decoration: none;
-    color: #fff;
-    background-color: #f59000;
-  }
+a {color: #fff; text-decoration: none; outline: none}
 
   @media (max-width: 768px) {
     .header-login-box,

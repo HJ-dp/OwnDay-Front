@@ -1,7 +1,8 @@
 // import { styled } from "styled-components";
 import { useEffect } from "react";
 const { kakao } = window;
-function KakaoMap() {
+
+function KakaoMap(props) {
     useEffect(()=>{
         const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
     const options = { //지도를 생성할 때 필요한 기본 옵션
@@ -14,9 +15,14 @@ function KakaoMap() {
 
     return (
         <div id="map" style={{
-            width: '600px', height: '500px'
+            width: `${props.x}`, height: `${props.y}`
         }}></div>
     );
 }
+
+KakaoMap.defaultProps = {
+    x : '500px',
+    y : '500px',
+};
 
 export default KakaoMap;
